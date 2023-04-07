@@ -1,7 +1,7 @@
-const repeatString = function(string, num) {
-    if(num < 0) return "ERROR";
-     
-};
+const repeatString = function(word, number) {
+    if(number < 0) return "ERROR";
+    let string = "";
+
 
 // Do not edit below this line
 module.exports = repeatString;
