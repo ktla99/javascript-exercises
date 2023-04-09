@@ -1,6 +1,6 @@
 const sumAll = function(min, max) {
-  if (min < 0 && max < 0) return "ERROR";
-  if (!isNaN(min) || !isNaN(max)) return "ERROR";
+  if (min < 0 || max < 0) return "ERROR";
+  if (isNaN(min) || isNaN(max)) return "ERROR";
   let finalSum = "";
   const backwards = min;
   min = max;
