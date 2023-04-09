@@ -5,7 +5,7 @@ const sumAll = function(min, max) {
   const backwards = min;
   min = max;
   max = backwards;
-  if(let i = min; i < max + 1; i++) {
+  for(let i = min; i < max + 1; i++) {
     finalSum += backwards;
   }
   return finalSum;
