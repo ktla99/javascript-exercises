@@ -5,7 +5,7 @@ const convertToCelsius = function(temp1) {
 };
 
 const convertToFahrenheit = function(temp2) {
-  let fahrenheit = (temp * 1.8) + 32;
+  let fahrenheit = (temp2 * 1.8) + 32;
   let rounded2 = Math.round(fahrenheit * 10) / 10;
   return rounded2;
 };
