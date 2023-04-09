@@ -10,7 +10,7 @@ const sumAll = function(min, max) {
 
   let finalSum = 0;
   for (let i = min; i < max + 1; i++) {
-    finalSum += 1;
+    finalSum += i;
   }
   return finalSum;
 };
