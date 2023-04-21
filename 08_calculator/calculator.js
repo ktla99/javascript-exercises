@@ -7,11 +7,15 @@ const subtract = function(a, b) {
 };
 
 const sum = function(a, b) {
-	return a += b;
+	let finalSum = 0;
+  for(let i = a; i < b + 1; i++){
+    finalSum += 1;
+  };
+  return finalSum;
 };
 
-const multiply = function() {
-
+const multiply = function(a, b) {
+  return a * b
 };
 
 const power = function() {
