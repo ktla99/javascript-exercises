@@ -12,8 +12,13 @@ const palindromes = function (phrase) {
         return true;
     } else {
         return false;
+        break;
     }
-}
+    if(joined.math(/[A-Z]/) === true) {
+        return joined = true;
+    }
+
+};
 };
 
 // Do not edit below this line
