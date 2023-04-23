@@ -1,25 +1,6 @@
-const palindromes = function (phrase) {
-    let string = phrase.split("");
-    let reversed = string.reverse();
-    let joined = reversed.join("");
-    for(i = 0; i < joined.length; i ++) {
-        if(joined.charAt(i) == '!' || joined.charAt(i) == ',' || joined.charAt(i) == ';' || joined.charAt(i) == '.' ||  joined.charAt(i) == '?' || joined.charAt(i) == '-' ||    
-        joined.charAt(i) == '\'' || joined.charAt(i) == '\"' || joined.charAt(i) == ':') {
-            return joined = true;
-             break;
-        }
-    if(phrase === joined) {
-        return true;
-    } else {
-        return false;
-        break;
-    }
-    if(joined.math(/[A-Z]/) === true) {
-        return joined = true;
-    }
-
-};
-};
-
-// Do not edit below this line
-module.exports = palindromes;
+const palindromes = function (string) {
+    const processedString = string.toLowerCase().replace(/[^a-z]/g, "");
+    return processedString.split("").reverse().join("") == processedString;
+  };
+  
+  module.exports = palindromes;
