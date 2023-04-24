@@ -1,11 +1,11 @@
 const findTheOldest = function(people) {
     return people.reduce((oldest, currentPerson) => {
         const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
-        const currentAge = getAge (
+        const currentAge = getAge(
             currentPerson.yearOfBirth,
             currentPerson.yearOfDeath
         );
-        return oldestAge < currentAge ? currentAge : oldest;
+        return oldestAge < currentAge ? currentPerson : oldest;
     });
 };
 
