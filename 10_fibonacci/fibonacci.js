@@ -1,11 +1,14 @@
 const fibonacci = function(a) {
-    const firstNum = 0;
-    if(a < 0)
-        return "Error";
-    for (i = a; i > a + 1; i++) {
-        firstNum += a[i];
+    if(a < 0) return "Error";
+    if(a === 0) return 0;
+    let first = 0;
+    let second = 1;
+    for (let i = 1; i < a; i++) {
+        const start = second;
+        second = first + second;
+        first = start;
     }
-    return firstNum;
+    return second;
 };
 
 // Do not edit below this line
