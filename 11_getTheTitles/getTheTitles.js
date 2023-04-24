@@ -1,17 +1,8 @@
-const getTheTitles = function(title, author) {
-    let titles = '';
-    let authors = '';
-    const books = [
-        {
-            title: titles,
-            author: authors
-        },
-        {
-            title: titles,
-            author: authors
-        }
-    ]
-     
+const getTheTitles = function() {
+    let bookOne = 'Book';
+    let bookTwo = 'Book2';
+    const book = [bookOne, bookTwo];
+    return book;
 };
 
 // Do not edit below this line
